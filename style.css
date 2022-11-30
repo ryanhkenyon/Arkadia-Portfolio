@@ -1,115 +1,168 @@
 /* nav */
 
 #navBox {
-    background-color: lightgray;
-    text-align: center;
+  background-color: lightgray;
+  text-align: center;
 }
 
-
 #navHomeBox {
-    margin: auto;
-    border: 1px solid;
-    border-radius: 3px;
+  margin: auto;
+  border: 1px solid;
+  border-radius: 3px;
 }
 
 #navHome {
-    text-align: center;
-    padding: 14px;
-    padding-left: 32px;
+  text-align: center;
+  padding: 14px;
+  padding-left: 32px;
 }
 
 #navHome:hover {
-    color: rebeccapurple
+  color: rebeccapurple;
 }
 
 /* landing */
 
 #landPage {
-    background-color: rebeccapurple;
-
+  background-image: url(./img/black.jpg);
+  background-size: 1500px;
 }
 
 #landNameCol {
-    position: relative;
+  position: relative;
 }
 
 #landName {
-    background-color: darkgreen;
-    margin: 130px;
-    min-width: 250px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  color: white;
+  margin: 130px;
+  min-width: 250px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-
 #arkayCol {
-    position: relative;
+  position: relative;
 }
 
 #arkay {
-    height: 300px;
-    margin: 0;
-  position:relative;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 300px;
+  margin: 0;
+  position: relative;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
 @media (max-width: 991px) {
-    #arkay {
-        margin-top: 50px
-    }
+  #arkay {
+    margin-top: 50px;
+  }
 }
 
 /* about */
 
 #aboutPage {
-    background-color: aqua;
-    display: block;
+  background-image: url(./img/blue.jpg);
+  background-size: 1350px 800px;
+  display: block;
+  border: solid 5px;
+}
+
+#aboutBox {
+    padding: 30px;
+}
+
+#aboutTitle {
+    margin-bottom: 50px;
 }
 
 #frontCol {
-    position: relative;
+  position: relative;
 }
 
-#frontEnd {
-    min-width: 400px;
-}
 
 #backCol {
-    position: relative;
+  position: relative;
 }
 
-#backEnd {
-    min-width: 400px;
+#frontEnd, #backEnd, #aboutTitle {
+  margin: 10px;
+  padding: 20px;
+  min-width: 400px;
+  border: solid 1px;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 150%;
+  color: white;
 }
 
 /* projects */
 
+#projectsTitle {
+    padding-top: 50px;
+    text-align: left;
+}
+
+
 #projectsPage {
-    background-color: lawngreen;
     text-align: center;
+    border: solid 5px;
+    background-color: whitesmoke;
+}
+
+#carouselExampleIndicators {
+    border: solid 5px;
+    border-radius: 3px;
+    margin: auto;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+
+#projectImgBox {
 }
 
 #projectImg {
-    height: 500px;
-    padding-bottom: 15px;
+    border-bottom: 5px solid;
 }
+
+#projectDetails {
+    padding: 10px;
+    display: block;
+    border: solid 1px;
+}
+
+@media (max-width: 991px) {
+    #projectDetails {
+    }
+  }
 
 /* contact */
 
 #contactPage {
-    background-color:cadetblue;
-    text-align: center;
+    background-color: #212529;
+  text-align: center;
+  color: white;
 }
 
 #contactForm {
-    border: 1px solid;
-    padding: 10px;
+  border: 1px solid;
+  padding: 10px;
+  background-color: #535b63;
+}
+
+input, textarea {
+    outline: none;
+}
+
+#messageInput {
+    width: 500px;
+    height: 100px;
 }
 
 /* footer */
 
 #footer {
-    background-color: #212529;
+  background-color: #212529;
 }
