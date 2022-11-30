@@ -1,0 +1,14 @@
+{
+  "name": "arkadia-portfolio",
+  "version": "1.0.0",
+  "description": "Arkadia | Portfolio",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Kenyon",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

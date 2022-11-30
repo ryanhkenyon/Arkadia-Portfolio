@@ -1,0 +1,115 @@
+/* nav */
+
+#navBox {
+    background-color: lightgray;
+    text-align: center;
+}
+
+
+#navHomeBox {
+    margin: auto;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+#navHome {
+    text-align: center;
+    padding: 14px;
+    padding-left: 32px;
+}
+
+#navHome:hover {
+    color: rebeccapurple
+}
+
+/* landing */
+
+#landPage {
+    background-color: rebeccapurple;
+
+}
+
+#landNameCol {
+    position: relative;
+}
+
+#landName {
+    background-color: darkgreen;
+    margin: 130px;
+    min-width: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#arkayCol {
+    position: relative;
+}
+
+#arkay {
+    height: 300px;
+    margin: 0;
+  position:relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media (max-width: 991px) {
+    #arkay {
+        margin-top: 50px
+    }
+}
+
+/* about */
+
+#aboutPage {
+    background-color: aqua;
+    display: block;
+}
+
+#frontCol {
+    position: relative;
+}
+
+#frontEnd {
+    min-width: 400px;
+}
+
+#backCol {
+    position: relative;
+}
+
+#backEnd {
+    min-width: 400px;
+}
+
+/* projects */
+
+#projectsPage {
+    background-color: lawngreen;
+    text-align: center;
+}
+
+#projectImg {
+    height: 500px;
+    padding-bottom: 15px;
+}
+
+/* contact */
+
+#contactPage {
+    background-color:cadetblue;
+    text-align: center;
+}
+
+#contactForm {
+    border: 1px solid;
+    padding: 10px;
+}
+
+/* footer */
+
+#footer {
+    background-color: #212529;
+}
