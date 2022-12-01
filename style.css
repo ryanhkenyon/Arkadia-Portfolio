@@ -133,10 +133,11 @@
     border: solid 1px;
 }
 
-@media (max-width: 991px) {
-    #projectDetails {
-    }
-  }
+.carousel {
+    max-width:740px;
+}
+
+
 
 /* contact */
 
@@ -157,8 +158,13 @@ input, textarea {
 }
 
 #messageInput {
-    width: 500px;
+    width: 400px;
     height: 100px;
+}
+
+@media (max-width: 991px) {
+  #projectDetails {
+  }
 }
 
 /* footer */
