@@ -10,3 +10,9 @@ navHome.addEventListener('click',()=>{
 // NAVBAR BUTTON---------------
 
 
+const selectValetManager = document.getElementById('selectValetManager');
+console.log('hmmm')
+console.log(selectValetManager)
+
+selectValetManager.onclick = function () {
+}
