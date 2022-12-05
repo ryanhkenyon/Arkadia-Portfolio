@@ -298,8 +298,7 @@ input, textarea {
 }
 
 #messageInput {
-    width: 25em;
-    height: 6.25em;
+    width: 80%;
 }
 
 /* footer */
