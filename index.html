@@ -25,7 +25,17 @@
     <div class="container-fluid" id="navBar">
       <nav class="navbar">
         <div id="navHomeBox">
-          <a class="navbar-brand" href="#" id="navHome">Arkadia</a>
+          <form>
+            <select
+              id="navSelect"
+              onchange="this.options[this.selectedIndex].value;"
+            >
+              <option value="" disabled selected hidden>Arkadia</option>
+              <option href="#aboutBox">About</option>
+              <option href="#projectsTitle">Projects</option>
+              <option href="#contactPage">Contact</option>
+            </select>
+          </form>
         </div>
       </nav>
     </div>
@@ -101,8 +111,8 @@
             <option id="selectValetManager" value="./project.html">
               Valet Manager
             </option>
-            <option>ForumAnon</option>
-            <option>Weather App</option>
+            <option id="selectForumAnon" value="./project.html">ForumAnon</option>
+            <option id="selectWeatherApp" value="./project.html">Weather App</option>
           </select>
         </form>
       </div>
@@ -137,7 +147,7 @@
                   <p class="card-text">
                     A website that keeps track of your valet business
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-primary">View Project Details</a>
                 </div>
               </div>
               <div class="card d-none d-md-block">
@@ -174,7 +184,7 @@
                   <p class="card-text">
                     A simple forum for hosting and sharing ideas
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-primary">View Project Details</a>
                 </div>
               </div>
               <div class="card d-none d-md-block">
@@ -215,7 +225,7 @@
                   <p class="card-text">
                     A simple app demonstrating API fetch requests.
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-primary">View Project Details</a>
                 </div>
               </div>
               <div class="card d-none d-md-block">
