@@ -53,7 +53,7 @@
             <div id="landName">
               <h1>Ryan Kenyon</h1>
               <h3>------------</h3>
-              <h3>Full-Stack Dev</h3>
+              <h3 id="fullStackTitle">Full-Stack Dev</h3>
               <h3>------------</h3>
               <br />
               <p>
@@ -98,23 +98,24 @@
         </div>
       </div>
       <!-- ABOUT -->
-
-      <h1 id="projectsTitle">My Projects</h1>
       <div id="projectsTitleBox">
-        <form>
-          <select
-          class="form-select"
-            id="selectProject"
-            onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"
-          >
-            <option value="" disabled selected hidden>Select Project</option>
-            <option id="selectValetManager" value="./project.html">
-              Valet Manager
-            </option>
-            <option id="selectForumAnon" value="./project.html">ForumAnon</option>
-            <option id="selectWeatherApp" value="./project.html">Weather App</option>
-          </select>
-        </form>
+        <h1 id="projectsTitle">My Projects</h1>
+        <div id="selectProject">
+          <form>
+            <select
+            class="form-select"
+              id="selectProject"
+              onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"
+            >
+              <option value="" disabled selected hidden>Select Project</option>
+              <option id="selectValetManager" value="./project.html">
+                Valet Manager
+              </option>
+              <option id="selectForumAnon" value="./project.html">ForumAnon</option>
+              <option id="selectWeatherApp" value="./project.html">Weather App</option>
+            </select>
+          </form>
+        </div>
       </div>
       <!-- PROJECTS -->
       <div

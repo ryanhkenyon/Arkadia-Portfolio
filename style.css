@@ -90,6 +90,12 @@
   transition:all 0.3s ease;
 }
 
+@media (max-width: 767px) {
+  #fullStackTitle {
+    font-size: 17px;
+  }
+}
+
 
 
 #resumeButton {
@@ -144,9 +150,26 @@ position: relative;
 position: relative;
 }
 
-#frontEnd, #backEnd {
-  min-width: 300px;
+
+@media (max-width: 767px) {
+  #frontEnd, #backEnd {
+    min-width: 214px;
+  }  
 }
+
+@media (max-width: 1200px) {
+  #frontEnd, #backEnd {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  #frontEnd, #backEnd {
+    font-size: 14px;
+  }
+}
+
+
 
 
 #frontEnd, #backEnd, #aboutTitle {
@@ -197,14 +220,27 @@ position: relative;
 
 /* projects */
 
+#projectsTitleBox {
+  margin-top: 30px;
+}
+
 #projectsTitle {
+  margin-bottom: -50px;
   margin-left: 20px;
   text-align: left;
 }
 
-#projectsTitleBox {
+@media (max-width: 640px) {
+  #projectsTitle {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+#selectProject {
   display: flex;
   margin: auto;
+  margin-top: 10px;
   justify-content: center;
   justify-self: center;
   
