@@ -282,6 +282,18 @@ position: relative;
   transform: translateY(-50%);
 }
 
+#sideCard {
+  width: 500px;
+}
+
+#valetManTech {
+  
+}
+
+#valetManagerImg {
+  max-width: 600px;
+}
+
 
 
 @media screen and (min-width: 991px) {

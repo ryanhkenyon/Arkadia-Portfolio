@@ -126,19 +126,21 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="cards-wrapper">
-              <div class="card d-none d-md-block">
-                <img
-                  src="./img/valetmanagerpic.png"
-                  class="card-img-top"
-                  alt="..."
-                />
+              <div id="sideCard" class="card d-none d-md-block">
                 <div class="card-body">
-                  <p class="card-text">Built using React and MongoDB</p>
+                  <h5 class="card-text" id="valetManTech">Built with</h5>
+                    <ul>
+                      <li>React</li>
+                      <li>Mongo-DB</li>
+                      <li>Bootstrap 5</li>
+                      <li>bcrypt</li>
+                    </ul>
                   <a href="#" class="btn btn-primary">Deploy Website</a>
                 </div>
               </div>
               <div class="card">
                 <img
+                  id="valetManagerImg"
                   src="./img/valetmanagerpic.png"
                   class="card-img-top"
                   alt="..."
@@ -151,12 +153,7 @@
                   <a href="#" class="btn btn-primary">View Project Details</a>
                 </div>
               </div>
-              <div class="card d-none d-md-block">
-                <img
-                  src="./img/valetmanagerpic.png"
-                  class="card-img-top"
-                  alt="..."
-                />
+              <div id="sideCard" class="card d-none d-md-block">
                 <div class="card-body">
                   <p class="card-text">Currently in Development</p>
                   <a
