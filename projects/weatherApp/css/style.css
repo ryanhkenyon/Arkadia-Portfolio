@@ -1,0 +1,208 @@
+:root {
+    --back-color: rgba(135,206,235,.7);
+    --front-color: rgba(222,222,222,.8);
+    --hover-color: rgb(255,255,255,.7);
+
+}
+
+
+/*zip code input*/
+
+
+#inputBox {
+    background-color: var(--back-color);
+    border: solid black 5px;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 320px;
+}
+
+#input {
+    background-color: var(--front-color);
+    border: solid black 2px;
+    border-radius: 5px;
+    margin: 4px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+#input:hover {
+    background-color: var(--hover-color);
+}
+
+#input:focus {
+    outline: none;
+}
+
+#button {
+    display: block;
+    margin-right: 40px;
+}
+
+#instructionsBox {
+    background-color: var(--back-color);
+    border: solid black 7px;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 320px;
+}
+
+#instructions {
+    text-align: center;
+    margin: auto;
+    display: block;
+    background-color: var(--front-color);
+    border: solid black 5px;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 500px;
+    padding: 5px;
+
+}
+
+
+
+/*todays weather display*/
+
+#weatherBox {
+    background-color: var(--back-color);
+    border: black solid 10px;
+    border-radius: 20px;
+    padding: 10px;
+    height: 500px;
+    min-width: 400px;
+    max-width: 700px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#dateCityIcon {
+    border: black solid;
+}
+
+#dateCity {
+    border: solid black 2px;
+    width: fit-content;
+    float: left;
+}
+
+#weatherIcon {
+    float: right;
+    width: 125px;
+    margin-top: 5px;
+    transition: transform 5s ease-in-out;
+}
+
+#selectedDay {
+    text-align: left;
+    font-size: 30px;
+}
+
+#selectedDate {
+    text-align: left;
+    font-size: 20px;
+}
+
+#cityName {
+    text-align: left;
+    font-size: 50px;
+}
+
+#weatherInfoBox {
+    background-color: var(--front-color);
+    border: solid black 5px;
+    border-radius: 20px;
+    width: 300px;
+    transition: transform .2s;
+    margin: auto;
+    
+    
+}
+
+#weatherInfoBox:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.15);
+}
+
+#currentTemp {
+    text-align: center;
+    font-size: 40px;
+}
+
+/* bottom-half */
+
+#bottom-half {
+    margin-left: 150px;
+    margin-right: 150px;
+    justify-content: center;
+}
+
+
+/*seven day forecast*/
+
+#days {
+    background-color: var(--back-color);
+    border: black solid 10px;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    min-width: 420px;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+#error {
+    background-color: var(--back-color);
+    border: black solid 10px;
+    border-radius: 20px;
+    padding: 10px;
+    height: 325px;
+    width: 400px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+
+#day1, #day2, #day3, #day4, #day5, #day6, #day7 {
+    background-color:var(--front-color);
+    border: black solid 2px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+    width: 275px;
+    transition: transform .2s;
+}
+
+#day1:hover, #day2:hover, #day3:hover, #day4:hover, #day5:hover, #day6:hover, #day7:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.15);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
