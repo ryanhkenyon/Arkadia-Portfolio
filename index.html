@@ -25,17 +25,15 @@
     <div class="container-fluid" id="navBar">
       <nav class="navbar">
         <div id="navHomeBox">
-          <form>
             <select
               id="navSelect"
-              onchange="this.options[this.selectedIndex].value;"
+              onchange="location = this.value"
             >
               <option value="" disabled selected hidden>Arkadia</option>
-              <option href="#aboutBox">About</option>
-              <option href="#projectsTitle">Projects</option>
-              <option href="#contactPage">Contact</option>
+              <option value="#aboutBox">About</option>
+              <option value="#projectsTitle">Projects</option>
+              <option value="#contactPage">Contact</option>
             </select>
-          </form>
         </div>
       </nav>
     </div>
@@ -150,7 +148,7 @@
                   <p class="card-text">
                     A website that keeps track of your valet business
                   </p>
-                  <a href="#" class="btn btn-primary">View Project Details</a>
+                  <a href="./index/valetManager.html" class="btn btn-primary">View Project Details</a>
                 </div>
               </div>
               <div id="sideCard" class="card d-none d-md-block">
@@ -182,7 +180,7 @@
                   <p class="card-text">
                     A simple forum for hosting and sharing ideas
                   </p>
-                  <a href="#" class="btn btn-primary">View Project Details</a>
+                  <a href="./index/forumAnon.html" class="btn btn-primary">View Project Details</a>
                 </div>
               </div>
               <div class="card d-none d-md-block">
@@ -190,7 +188,7 @@
                 <div class="card-body">
                   <p class="card-text">Currently in development</p>
                   <a
-                    href="https://github.com/ryanhkenyon/Module-5-Project"
+                    href="https://github.com/ryanhkenyon/ForumAnon"
                     target="_blank"
                     class="btn btn-primary"
                     >View Repository</a
@@ -223,7 +221,7 @@
                   <p class="card-text">
                     A simple app demonstrating API fetch requests.
                   </p>
-                  <a href="#" class="btn btn-primary">View Project Details</a>
+                  <a href="./index/weatherApp.html" class="btn btn-primary">View Project Details</a>
                 </div>
               </div>
               <div class="card d-none d-md-block">
@@ -235,7 +233,7 @@
                 <div class="card-body">
                   <p class="card-text">Currently in development</p>
                   <a
-                    href="https://github.com/ryanhkenyon/Module-3-Project"
+                    href="https://github.com/ryanhkenyon/WeatherApp"
                     target="_blank"
                     class="btn btn-primary"
                     >View Repository</a

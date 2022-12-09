@@ -328,3 +328,119 @@ input, textarea {
 #footer {
   background-color: #212529;
 }
+
+
+
+/* INDIVIDUAL PROJECT PAGES */
+
+#projectTitle {
+  padding-top: 20px;
+}
+
+#projectPageImg {
+  width: 100vh;
+  border: solid 1px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+@media (max-width: 767px) {
+  #userDetails, #techDetails {
+    min-width: 214px;
+  }  
+}
+
+@media (max-width: 1200px) {
+  #userDetails, #techDetails {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  #userDetails, #techDetails {
+    font-size: 14px;
+  }
+}
+
+#projectButton {
+  padding: 30px;
+  font-size: 30px;
+  margin: 10px;
+  border: solid 1px;
+}
+
+
+#userDetails, #techDetails, #aboutProjectTitle {
+  margin: 10px;
+  padding: 20px;
+  border: solid 1px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+
+#userDetails:hover, #techDetails:hover, #aboutProjectTitle:hover, #projectButton:hover {
+  -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+        transition:all 0.3s ease;
+        border-radius: 20px;
+}
+
+#userDetails:not(:hover), #techDetails:not(:hover), #aboutProjectTitle:not(:hover) {
+  -webkit-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        transform: scale(1.0);
+        transition:all 0.3s ease;
+        
+}
+
+@media (max-width: 61.9375em) {
+  #userDetails:hover, #techDetails:hover, #aboutProjectTitle:hover {
+    -webkit-transform: scale(1.0);
+          -ms-transform: scale(1.0);
+          transform: scale(1.0);
+          background-color: rgba(121, 0, 151, 0.8);
+          transition:all 0.3s ease;
+  }
+  
+  #userDetails:not(:hover), #techDetails:not(:hover), #aboutProjectTitle:not(:hover) {
+    -webkit-transform: scale(1.0);
+          -ms-transform: scale(1.0);
+          transform: scale(1.0);
+          transition:all 0.3s ease;
+          
+  }
+}
+
+#projectPageImg {
+  border: 5px solid rgba(0, 0, 0, 0.9);
+  border-radius: 5px;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.2);
+  position: relative;
+}
+
+@media (max-width:991px) {
+  #projectPageImg {
+    width: 300px;
+  }
+}
+
+@media (max-width:400px) {
+  #projectPageImg {
+    width: 200px;
+  }
+}
+
+
+#projectPageImg:hover {
+  border-radius: 10%;
+  border:rgba(0, 0, 0, 0.9) 8px solid;
+  transition:all 0.3s ease;
+}
+
+#projectPageImg:not(:hover) {
+  transition:all 0.3s ease;
+}
