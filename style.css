@@ -337,6 +337,12 @@ input, textarea {
   padding-top: 20px;
 }
 
+@media (max-width: 780px) {
+  #projectsTitle {
+    font-size: 25px;
+  }
+}
+
 #projectPageImg {
   width: 100vh;
   border: solid 1px;
@@ -402,7 +408,7 @@ input, textarea {
     -webkit-transform: scale(1.0);
           -ms-transform: scale(1.0);
           transform: scale(1.0);
-          background-color: rgba(121, 0, 151, 0.8);
+          background-color: white;
           transition:all 0.3s ease;
   }
   

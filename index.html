@@ -71,7 +71,7 @@
         <div class="row">
           <div class="col" id="frontCol">
             <div id="frontEnd">
-              <h3 id="aboutText">Front-End</h3>
+              <h3>Front-End</h3>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim modi
               velit rerum rem hic quisquam ullam ab labore amet, odit excepturi,
               officia dolores ea maxime sint deserunt eveniet tenetur
@@ -83,7 +83,7 @@
           </div>
           <div class="col" id="backCol">
             <div id="backEnd">
-              <h3 id="aboutText">Back-End</h3>
+              <h3>Back-End</h3>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
               mollitia odio esse, a corporis, assumenda omnis debitis temporibus
               sequi culpa soluta non possimus distinctio similique delectus
@@ -103,14 +103,14 @@
             <select
             class="form-select"
               id="selectProject"
-              onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"
+              onchange="location = this.value"
             >
               <option value="" disabled selected hidden>Select Project</option>
-              <option id="selectValetManager" value="./project.html">
+              <option id="selectValetManager" value="./index/valetManager.html">
                 Valet Manager
               </option>
-              <option id="selectForumAnon" value="./project.html">ForumAnon</option>
-              <option id="selectWeatherApp" value="./project.html">Weather App</option>
+              <option id="selectForumAnon" value="./index/forumAnon.html">ForumAnon</option>
+              <option id="selectWeatherApp" value="./index/weatherApp.html">Weather App</option>
             </select>
           </form>
         </div>
