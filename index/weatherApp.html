@@ -61,13 +61,19 @@
           <div class="col" id="frontCol">
             <div id="userDetails">
               <h3>User Details</h3>
-              Users can view current and forecasted weather with a valid five-digit zip code. 
+              <p>WeatherApp is a simple website that searches for current and forecasted weather from any zip code. Data includes highs and lows, humidity, and weather messages.</p>
             </div>
           </div>
           <div class="col" id="backCol">
             <div id="techDetails">
               <h3>Tech Details</h3>
-              Weather App was built with Vanilla JS and a fetch request to Weather.com.
+              <div id="icons">
+                <img src="../img/icons/HTML5.png" alt="HTML5">
+                <img src="../img/icons/CSS.png" alt="CSS">
+                <img src="../img/icons/JS.png" alt="JavaScript">
+              </div>
+              <br>
+              <p>WeatherApp is a simple HTML page demonstrating a successful fetch request to a weather website's API. After validating the zip code, the app will make a fetch request to <a href="https://openweathermap.org/" target="_blank">openweathermap.org</a> and display the returned data through DOM manipulation. <br><br> If zip code is invalid, error page will be displayed.</p>
             </div>
           </div>
         </div>
@@ -103,17 +109,17 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="cards-wrapper">
-              <div id="sideCard" class="card d-none d-md-block">
+              <div id="sideCard" class="card d-none d-xxl-block">
                 <div class="card-body">
                   <br>
                   <h5 class="card-text" id="valetManTech">-User Details-</h5>
                   <br>
-                  <p>Valet Manager is a website built for keeping track of data on the ongoings of a valet operation. Users can save data on their valet employees and locations where they operate.</p>
+                  <p>Valet Manager is a website built for keeping track of data on the ongoings of a valet operation. Users can save data on their valet employees and locations where they operate. After registering an account, users can either Add Location or Add Valet. Completing these forms will populate the Locations and Valets pages with the updated data.<br><br>When there is both a Location and a Valet saved, the user can assign the two to each other by clicking Details on either a Location or a Valet. Scrolling down on this page will reveal a dropdown menu populated with options. Selecting one of these will populate the area below the Details page with the relative data.</p>
                 </div>
               </div>
               <div class="card">
                 <img
-                  id="valetManagerImg"
+                  id="carouselImg"
                   src="../img/valetmanagerpic.png"
                   class="card-img-top"
                   alt="..."
@@ -123,7 +129,7 @@
                   <p class="card-text">
                     A website that keeps track of your valet business
                   </p>
-                  <a href="./valetManager.html" class="btn btn-primary">View Project Details</a>
+                  <a href="../index/valetManager.html" class="btn btn-primary">View Project Details</a>
                 </div>
               </div>
               <div id="sideCard" class="card d-none d-md-block">
@@ -131,46 +137,60 @@
                   <br>
                   <h5 class="card-text" id="valetManTech">-Tech Details-</h5>
                   <br>
-                  Valet Manager is a Full-Stack project constructed with  React.JS front-end components and a MongoDB back-end server. Other features include JWT, Bcrypt, Express, and Node.JS. 
+                  <div id="icons">
+                    <img src="../img/icons/HTML5.png" alt="HTML5">
+                    <img src="../img/icons/CSS.png" alt="CSS">
+                    <img src="../img/icons/JS.png" alt="JavaScript">
+                    <img src="../img/icons/React.png" alt="React">
+                    <img src="../img/icons/MongoDB.png" alt="MongoDB">
+                    <img src="../img/icons/NodeJS.png" alt="NodeJS">
+                  </div>
+                  <br>
+                  Valet Manager has login-logout functionality, complete with JWT and cookie. Registered user passwords are hashed with Bcrypt and stored on MongoDB. Express is used to route files together in the back end.
                 </div>
               </div>
-              </div>
             </div>
+          </div>
           <div class="carousel-item">
             <div class="cards-wrapper">
-              <div id="sideCard" class="card d-none d-md-block">
+              <div id="sideCard" class="card d-none d-xxl-block">
                 <div class="card-body">
                   <br>
                   <h5 class="card-text" id="valetManTech">-User Details-</h5>
                   <br>
-                  <p>ForumAnon is a simple website for sharing thoughts and ideas. After registering, users can either create new threads or add comments to existing ones. Users are able to edit their threads/comments after posting.</p>
+                  <p>ForumAnon is a simple website for sharing thoughts and ideas. After registering, users can either create new threads or add comments to existing ones. Users are able to edit their own threads/comments after posting, but unable to edit threads/comments of others.<br><br></p>
                 </div>
               </div>
-              
               <div class="card">
-                <img src="../img/forumanon.png" class="card-img-top" alt="..." />
+                <img id="carouselImg" src="../img/forumanon.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">ForumAnon</h5>
                   <p class="card-text">
                     A simple forum for hosting and sharing ideas
                   </p>
-                  <a href="./forumAnon.html" class="btn btn-primary">View Project Details</a>
+                  <a href="../index/forumAnon.html" class="btn btn-primary">View Project Details</a>
                 </div>
               </div>
-            
               <div id="sideCard" class="card d-none d-md-block">
                 <div class="card-body">
                   <br>
                   <h5 class="card-text" id="valetManTech">-Tech Details-</h5>
+                  <div id="icons">
+                    <img src="../img/icons/HTML5.png" alt="HTML5">
+                    <img src="../img/icons/CSS.png" alt="CSS">
+                    <img src="../img/icons/JS.png" alt="JavaScript">
+                    <img src="../img/icons/MongoDB.png" alt="MongoDB">
+                    <img src="../img/icons/NodeJS.png" alt="NodeJS">
+                  </div>
                   <br>
                   <p>ForumAnon was built with a Handelbars and uses a MongoDB hosted server to host data. Other features include JWT, Bcrypt, Express, and Node.JS</p>
                 </div>
+              </div>
             </div>
-          </div>
           </div>
           <div class="carousel-item">
             <div class="cards-wrapper">
-              <div id="sideCard" class="card d-none d-md-block">
+              <div id="sideCard" class="card d-none d-xxl-block">
                 <div class="card-body">
                   <br>
                   <h5 class="card-text" id="valetManTech">-User Details-</h5>
@@ -180,6 +200,7 @@
               </div>
               <div class="card">
                 <img
+                id="carouselImg"
                   src="../img/weatherapp.png"
                   class="card-img-top"
                   alt="..."
@@ -189,15 +210,20 @@
                   <p class="card-text">
                     A simple app demonstrating API fetch requests.
                   </p>
-                  <a href="./weatherApp.html" class="btn btn-primary">View Project Details</a>
+                  <a href="../index/weatherApp.html" class="btn btn-primary">View Project Details</a>
                 </div>
               </div>
               <div id="sideCard" class="card d-none d-md-block">
                 <div class="card-body">
                   <br>
                   <h5 class="card-text" id="valetManTech">-Tech Details-</h5>
+                  <div id="icons">
+                    <img src="../img/icons/HTML5.png" alt="HTML5">
+                    <img src="../img/icons/CSS.png" alt="CSS">
+                    <img src="../img/icons/JS.png" alt="JavaScript">
+                  </div>
                   <br>
-                  <p>WeatherApp is a simple HTML page demonstrating a successful fetch request to a weather website's API.</p>
+                  <p>WeatherApp is a simple HTML page demonstrating a successful fetch request to a weather website's API. After validating the zip code, the app will make a fetch request to <a href="https://openweathermap.org/" target="_blank">openweathermap.org</a> and display the returned data through DOM manipulation. <br><br> If zip code is invalid, error page will be displayed.</p>
                 </div>
               </div>
             </div>
