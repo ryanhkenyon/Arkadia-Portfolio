@@ -5,132 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arkadia</title>
-    <!-- BOOTSTRAP CSS -->
+    <!-- BOOTSTRAP CSS START -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <!-- BOOTSTRAP CSS -->
+    <!-- BOOTSTRAP CSS END -->
 
-    <!-- MY CSS and JS-->
+    <!-- BOOTSTRAP JS START-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BOOTSTRAP JS END-->
+
+    <!-- FONTAWESOME ICONS START -->
+    <script
+      src="https://kit.fontawesome.com/09f472029f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FONTAWESOME ICONS END -->
+
+    <!-- MY CSS and JS START-->
     <link rel="stylesheet" href="./style.css" />
     <script src="./script/script.js" defer></script>
-    <!-- MY CSS and JS-->
+    <!-- MY CSS and JS END-->
   </head>
 
   <body>
-    <!-- navbar -->
-    <div class="container-fluid" id="navBar">
+    <!--NAVBAR START-->
+    <div class="container-fluid">
       <nav class="navbar">
-        <div id="navHomeBox">
-            <select
-              id="navSelect"
-              onchange="location = this.value"
-            >
-              <option value="" disabled selected hidden>Arkadia</option>
-              <option value="#aboutBox">About</option>
-              <option value="#projectsTitle">Projects</option>
-              <option value="#contactPage">Contact</option>
-            </select>
+        <div class="navBox">
+          <select class="navMenu" onchange="location = this.value">
+            <option disabled selected hidden>Arkadia</option>
+            <option value="#about">About</option>
+            <option value="#projects">Projects</option>
+            <option value="#contact">Contact</option>
+          </select>
         </div>
       </nav>
     </div>
-    <!-- navbar -->
+    <!--NAVBAR END -->
 
-    <!-- LANDING PAGE -->
-    <div class="container-fluid" id="landPage">
-      <!-- INTRO -->
+    <!-- LANDING START -->
+    <div class="container-fluid landing">
+      <!-- INTRO START -->
       <div class="container text-center">
         <div class="row">
-          <div class="col" id="arkayCol">
-            <img src="./img/arkay.png" id="arkay" />
+          <div class="col">
+            <img class="arkay" src="./img/arkay.png" />
           </div>
-          <div class="col" id="landNameCol">
-            <div id="landName">
-              <h1 id="ryanKenyon">Ryan Kenyon</h1>
+          <div class="col">
+            <div class="landName">
+              <h1>Ryan Kenyon</h1>
               <h3>------------</h3>
-              <h3 id="fullStackTitle">Full-Stack Dev</h3>
+              <h3>Full-Stack Dev</h3>
               <h3>------------</h3>
               <br />
               <p>
                 Hardworking, goal-oriented programmer with experience in web
                 design and back-end frameworks
               </p>
-              <button id="resumeButton"><a href="./files/Resume.pdf" id="resumeLink">See My Resume</a></button>
+              <button><a href="./files/Resume.pdf">See My Resume</a></button>
             </div>
           </div>
         </div>
       </div>
-      <!-- INTRO -->
+      <!-- INTRO START -->
 
-      <!-- ABOUT -->
-      <div class="container text-center" id="aboutBox">
-        <div id="frontEnd">
+      <!-- ABOUT ME START-->
+      <div class="container text-center" id="about">
+        <div class="infoBox">
           <h1>About Me</h1>
-          <p>I live in Clearwater, FL and just recently completed a Full-Stack Web Development course at Kingsland University. I've since discovered a passion for both front end web design and back-end data management and manipulation. I love problem solving and learning new ideas and concepts.
+          <p>
+            I live in Clearwater, FL and just recently completed a Full-Stack
+            Web Development course at Kingsland University. I've since
+            discovered a passion for both front end web design and back-end data
+            management and manipulation. I love problem solving and learning new
+            ideas and concepts.
+          </p>
         </div>
+
         <div class="row">
-          <div class="col" id="frontCol">
-            <div id="backEnd">
+          <div class="col">
+            <div class="infoBox small">
               <h3>Front-End</h3>
-              HTML5
-              <br>
-              CSS
-              <br>
-              JavaScript
-              <br>
-              DOM Manipulation
-              <br>
-              Handelbars
-              <br>
-              React
-              <br>
-              AJAX
+              HTML5<br />CSS<br />JavaScript<br />DOM Manipulation<br />Handelbars<br />React<br />AJAX
             </div>
           </div>
-          <div class="col" id="backCol">
-            <div id="backEnd">
+          <div class="col">
+            <div class="infoBox small">
               <h3>Back-End</h3>
-              NodeJS
-              <br>
-              Express
-              <br>
-              Git
-              <br>
-              MongoDB
-              <br>
-              Firebase
-              <br>
-              Authentication
-              <br>
-              REST APIs
+              NodeJS<br />Express<br />Git<br />MongoDB<br />Firebase<br />Authentication<br />REST
+              APIs
             </div>
           </div>
         </div>
       </div>
-      <!-- ABOUT -->
-      <div id="projectsTitleBox">
-        <h1 id="projectsTitle">My Projects</h1>
-        <div id="selectProject">
-          <form>
-            <select
-            class="form-select"
-              id="selectProject"
-              onchange="location = this.value"
-            >
-              <option value="" disabled selected hidden>Select Project</option>
-              <option id="selectValetManager" value="./index/valetManager.html">
-                Valet Manager
-              </option>
-              <option id="selectForumAnon" value="./index/forumAnon.html">ForumAnon</option>
-              <option id="selectWeatherApp" value="./index/weatherApp.html">Weather App</option>
-            </select>
-          </form>
-        </div>
+      <!-- ABOUT ME END-->
+
+      <!-- PROJECTS START -->
+      <h1 class="projectsTitle" id="projects">My Projects</h1>
+      <div class="projectSelect">
+        <form>
+          <select class="form-select" onchange="location = this.value">
+            <option value="" disabled selected hidden>Select Project</option>
+            <option value="./index/valetManager.html">Valet Manager</option>
+            <option value="./index/forumAnon.html">ForumAnon</option>
+            <option value="./index/weatherApp.html">Weather App</option>
+          </select>
+        </form>
       </div>
-      <!-- PROJECTS -->
+      <!-- CAROUSEL START -->
       <div
         id="carouselExampleControls"
         class="carousel slide"
@@ -139,17 +129,29 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="cards-wrapper">
-              <div id="sideCard" class="card d-none d-xxl-block">
+              <div class="card d-none d-xxl-block">
                 <div class="card-body">
-                  <br>
-                  <h5 class="card-text" id="valetManTech">-User Details-</h5>
-                  <br>
-                  <p>Valet Manager is a website built for keeping track of data on the ongoings of a valet operation. Users can save data on their valet employees and locations where they operate. After registering an account, users can either Add Location or Add Valet. Completing these forms will populate the Locations and Valets pages with the updated data.<br><br>When there is both a Location and a Valet saved, the user can assign the two to each other by clicking Details on either a Location or a Valet. Scrolling down on this page will reveal a dropdown menu populated with options. Selecting one of these will populate the area below the Details page with the relative data.</p>
+                  <br />
+                  <h5 class="card-text">-User Details-</h5>
+                  <br />
+                  <p>
+                    Valet Manager is a website built for keeping track of data
+                    on the ongoings of a valet operation. Users can save data on
+                    their valet employees and locations where they operate.
+                    After registering an account, users can either Add Location
+                    or Add Valet. Completing these forms will populate the
+                    Locations and Valets pages with the updated data.<br /><br />When
+                    there is both a Location and a Valet saved, the user can
+                    assign the two to each other by clicking Details on either a
+                    Location or a Valet. Scrolling down on this page will reveal
+                    a dropdown menu populated with options. Selecting one of
+                    these will populate the area below the Details page with the
+                    relative data.
+                  </p>
                 </div>
               </div>
               <div class="card">
                 <img
-                  id="carouselImg"
                   src="./img/valetmanagerpic.png"
                   class="card-img-top"
                   alt="..."
@@ -159,78 +161,106 @@
                   <p class="card-text">
                     A website that keeps track of your valet business
                   </p>
-                  <a href="./index/valetManager.html" class="btn btn-primary">View Project Details</a>
+                  <a href="./index/valetManager.html" class="btn btn-primary"
+                    >View Project Details</a
+                  >
                 </div>
               </div>
-              <div id="sideCard" class="card d-none d-md-block">
+              <div class="card d-none d-md-block">
                 <div class="card-body">
-                  <br>
-                  <h5 class="card-text" id="valetManTech">-Tech Details-</h5>
-                  <br>
+                  <br />
+                  <h5 class="card-text">-Tech Details-</h5>
+                  <br />
                   <div id="icons">
-                    <img src="./img/icons/HTML5.png" alt="HTML5">
-                    <img src="./img/icons/CSS.png" alt="CSS">
-                    <img src="./img/icons/JS.png" alt="JavaScript">
-                    <img src="./img/icons/React.png" alt="React">
-                    <img src="./img/icons/MongoDB.png" alt="MongoDB">
-                    <img src="./img/icons/NodeJS.png" alt="NodeJS">
+                    <img src="./img/icons/HTML5.png" alt="HTML5" />
+                    <img src="./img/icons/CSS.png" alt="CSS" />
+                    <img src="./img/icons/JS.png" alt="JavaScript" />
+                    <img src="./img/icons/React.png" alt="React" />
+                    <img src="./img/icons/MongoDB.png" alt="MongoDB" />
+                    <img src="./img/icons/NodeJS.png" alt="NodeJS" />
                   </div>
-                  <br>
-                  Valet Manager has login-logout functionality, complete with JWT and cookie. Registered user passwords are hashed with Bcrypt and stored on MongoDB. Express is used to route files together in the back end. Mongoose _id's used to associate Locations and Valets with each other. <br><br> Valet Manager was developed by Ryan Kenyon as part of Kingsland University's Full Stack Developer program.
+                  <br />
+                  Valet Manager has login-logout functionality, complete with
+                  JWT and cookie. Registered user passwords are hashed with
+                  Bcrypt and stored on MongoDB. Express is used to route files
+                  together in the back end. Mongoose _id's used to associate
+                  Locations and Valets with each other. <br /><br />
+                  Valet Manager was developed by Ryan Kenyon as part of
+                  Kingsland University's Full Stack Developer program.
                 </div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="cards-wrapper">
-              <div id="sideCard" class="card d-none d-xxl-block">
+              <div class="card d-none d-xxl-block">
                 <div class="card-body">
-                  <br>
-                  <h5 class="card-text" id="valetManTech">-User Details-</h5>
-                  <br>
-                  <p>ForumAnon is a simple website for sharing thoughts and ideas. After registering, users can either create new threads or add comments to existing ones. Users are able to edit their own threads/comments after posting, but unable to edit threads/comments of others.<br><br></p>
+                  <br />
+                  <h5 class="card-text">-User Details-</h5>
+                  <br />
+                  <p>
+                    ForumAnon is a simple website for sharing thoughts and
+                    ideas. After registering, users can either create new
+                    threads or add comments to existing ones. Users are able to
+                    edit their own threads/comments after posting, but unable to
+                    edit threads/comments of others.<br /><br />
+                  </p>
                 </div>
               </div>
               <div class="card">
-                <img id="carouselImg" src="./img/forumanon.png" class="card-img-top" alt="..." />
+                <img src="./img/forumanon.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">ForumAnon</h5>
                   <p class="card-text">
                     A simple forum for hosting and sharing ideas
                   </p>
-                  <a href="./index/forumAnon.html" class="btn btn-primary">View Project Details</a>
+                  <a href="./index/forumAnon.html" class="btn btn-primary"
+                    >View Project Details</a
+                  >
                 </div>
               </div>
-              <div id="sideCard" class="card d-none d-md-block">
+              <div class="card d-none d-md-block">
                 <div class="card-body">
-                  <br>
-                  <h5 class="card-text" id="valetManTech">-Tech Details-</h5>
+                  <br />
+                  <h5 class="card-text">-Tech Details-</h5>
                   <div id="icons">
-                    <img src="./img/icons/HTML5.png" alt="HTML5">
-                    <img src="./img/icons/CSS.png" alt="CSS">
-                    <img src="./img/icons/JS.png" alt="JavaScript">
-                    <img src="./img/icons/MongoDB.png" alt="MongoDB">
-                    <img src="./img/icons/NodeJS.png" alt="NodeJS">
+                    <img src="./img/icons/HTML5.png" alt="HTML5" />
+                    <img src="./img/icons/CSS.png" alt="CSS" />
+                    <img src="./img/icons/JS.png" alt="JavaScript" />
+                    <img src="./img/icons/MongoDB.png" alt="MongoDB" />
+                    <img src="./img/icons/NodeJS.png" alt="NodeJS" />
                   </div>
-                  <br>
-                  <p>ForumAnon was built with a Handelbars and uses a MongoDB hosted server to host data. Login-logout functionality with JWT and cookie. MongoDB _id associated with posts/comments to prevent unauthorized editing or deletion.<br><br>ForumAnon was built by Ryan Kenyon and Binh Tran as part of Kingsland University's Full-Stack Developer program.</p>
+                  <br />
+                  <p>
+                    ForumAnon was built with a Handelbars and uses a MongoDB
+                    hosted server to host data. Login-logout functionality with
+                    JWT and cookie. MongoDB _id associated with posts/comments
+                    to prevent unauthorized editing or deletion.<br /><br />ForumAnon
+                    was built by Ryan Kenyon and Binh Tran as part of Kingsland
+                    University's Full-Stack Developer program.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="cards-wrapper">
-              <div id="sideCard" class="card d-none d-xxl-block">
+              <div class="card d-none d-xxl-block">
                 <div class="card-body">
-                  <br>
-                  <h5 class="card-text" id="valetManTech">-User Details-</h5>
-                  <br>
-                  <p>WeatherApp is a simple website that searches for current and forecasted weather from any zip code. Data includes highs and lows, humidity, and weather messages. Forecasted weather is displayed for the next seven days below the current weather.</p>
+                  <br />
+                  <h5 class="card-text">-User Details-</h5>
+                  <br />
+                  <p>
+                    WeatherApp is a simple website that searches for current and
+                    forecasted weather from any zip code. Data includes highs
+                    and lows, humidity, and weather messages. Forecasted weather
+                    is displayed for the next seven days below the current
+                    weather.
+                  </p>
                 </div>
               </div>
               <div class="card">
                 <img
-                id="carouselImg"
                   src="./img/weatherapp.png"
                   class="card-img-top"
                   alt="..."
@@ -240,20 +270,34 @@
                   <p class="card-text">
                     A simple app demonstrating API fetch requests.
                   </p>
-                  <a href="./index/weatherApp.html" class="btn btn-primary">View Project Details</a>
+                  <a href="./index/weatherApp.html" class="btn btn-primary"
+                    >View Project Details</a
+                  >
                 </div>
               </div>
               <div id="sideCard" class="card d-none d-md-block">
                 <div class="card-body">
-                  <br>
-                  <h5 class="card-text" id="valetManTech">-Tech Details-</h5>
+                  <br />
+                  <h5 class="card-text">-Tech Details-</h5>
                   <div id="icons">
-                    <img src="./img/icons/HTML5.png" alt="HTML5">
-                    <img src="./img/icons/CSS.png" alt="CSS">
-                    <img src="./img/icons/JS.png" alt="JavaScript">
+                    <img src="./img/icons/HTML5.png" alt="HTML5" />
+                    <img src="./img/icons/CSS.png" alt="CSS" />
+                    <img src="./img/icons/JS.png" alt="JavaScript" />
                   </div>
-                  <br>
-                  <p>WeatherApp is a simple HTML page demonstrating a successful fetch request to a weather website's API. After validating the zip code, the app will make a fetch request to <a href="https://openweathermap.org/" target="_blank">openweathermap.org</a> and display the returned data through DOM manipulation. If zip code is invalid, error page will be displayed. <br><br> WeatherApp was developed by Ryan Kenyon and Binh Tran as part of Kingsland University's Full Stack Developer program.</p>
+                  <br />
+                  <p>
+                    WeatherApp is a simple HTML page demonstrating a successful
+                    fetch request to a weather website's API. After validating
+                    the zip code, the app will make a fetch request to
+                    <a href="https://openweathermap.org/" target="_blank"
+                      >openweathermap.org</a
+                    >
+                    and display the returned data through DOM manipulation. If
+                    zip code is invalid, error page will be displayed.
+                    <br /><br />
+                    WeatherApp was developed by Ryan Kenyon and Binh Tran as
+                    part of Kingsland University's Full Stack Developer program.
+                  </p>
                 </div>
               </div>
             </div>
@@ -279,23 +323,25 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <!-- PROJECTS -->
-    </div>
-    <!-- LANDING PAGE -->
+      <!-- CAROUSEL END -->
 
-    <!-- contact page -->
-    <div class="container-fluid" id="contactPage">
+      <!-- PROJECTS END-->
+    </div>
+    <!-- LANDING END -->
+
+    <!-- CONTACT START -->
+    <div class="container-fluid contact" id="contact">
       <h1>Contact me!</h1>
-      <div class="container-sm" id="contactForm">
+      <div class="container-sm contact" id="contactForm">
         <form>
           <label>Name</label><br />
-          <input id="nameInput" required />
+          <input required />
           <br />
           <label>Email</label><br />
-          <input id="emailInput" required />
+          <input required />
           <br />
           <label>Message</label><br />
-          <textarea id="messageInput" required></textarea>
+          <textarea required></textarea>
           <br />
           <br />
           <input type="submit" />
@@ -303,14 +349,12 @@
       </div>
       <br />
     </div>
-    <!-- contact page -->
+    <!-- CONTACT END -->
 
-    <!-- footer -->
-    <div class="container-fluid" id="footer">
-      <footer class="bg-dark text-center text-white">
-        <!-- Grid container -->
+    <!-- FOOTER START -->
+    <div class="container-fluid footer">
+      <footer>
         <div class="container p-4">
-          <!-- Section: Social media -->
           <section class="mb-4">
             <!-- Facebook -->
             <a
@@ -348,9 +392,7 @@
               ><i class="fab fa-github"></i
             ></a>
           </section>
-          <!-- Section: Social media -->
 
-          <!-- Section: Text -->
           <section class="mb-4">
             <p>
               This portfolio website was designed by Ryan Kenyon and built using
@@ -365,26 +407,9 @@
               >
             </p>
           </section>
-          <!-- Section: Text -->
         </div>
-        <!-- Grid container -->
       </footer>
     </div>
-    <!-- footer -->
-
-    <!-- BOOTSTRAP -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <!-- BOOTSTRAP -->
-
-    <!-- FONTAWESOME ICONS -->
-    <script
-      src="https://kit.fontawesome.com/09f472029f.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- FONTAWESOME ICONS -->
+    <!-- FOOTER END -->
   </body>
 </html>

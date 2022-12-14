@@ -14,60 +14,73 @@
     />
     <!-- BOOTSTRAP CSS -->
 
+    <!-- BOOTSTRAP JS START-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BOOTSTRAP JS END-->
+
+    
+      <!-- FONTAWESOME ICONS START-->
+      <script
+        src="https://kit.fontawesome.com/09f472029f.js"
+        crossorigin="anonymous"
+      ></script>
+      <!-- FONTAWESOME ICONS END-->
+
     <!-- MY CSS and JS-->
     <link rel="stylesheet" href="../style.css" />
     <script src="../script/script.js" defer></script>
     <!-- MY CSS and JS-->
 </head>
 <body>
-    <!-- navbar -->
-    <div class="container-fluid" id="navBar">
-        <nav class="navbar">
-          <div id="navHomeBox">
-              <select
-                id="navSelect"
-                onchange="location = this.value"
-              >
-                <option value="" disabled selected hidden>Arkadia</option>
-                <option value="../index.html">Home</option>
-                <option value="#aboutBox">About</option>
-                <option value="../index.html#projectsTitle">Projects</option>
-                <option value="#contactPage">Contact</option>
-              </select>
-          </div>
-        </nav>
-      </div>
-      <!-- navbar -->
+    <!-- NAVBAR START -->
+    <div class="container-fluid">
+      <nav class="navbar">
+        <div class="navBox">
+          <select class="navMenu" onchange="location = this.value">
+            <option disabled selected hidden>Arkadia</option>
+            <option value="../index.html">Home</option>
+            <option value="#about">About</option>
+            <option value="#projects">Projects</option>
+            <option value="#contact">Contact</option>
+          </select>
+        </div>
+      </nav>
+    </div>
+      <!-- NAVBAR END -->
 
-      <!-- project page -->
-      <div class="container-fluid" id="landPage">
+      <!-- PROJECT START -->
+      <div class="container-fluid landing">
         <div class="container text-center">
-            <h1 id="projectTitle">ForumAnon</h1>
-            <br/>
+            <h1 class="projectTitle">ForumAnon</h1>
+            <br>
             <h6>by Ryan Kenyon and Binh Tran</h6>
-            <img src="../img/forumanon.png" id="projectPageImg">
-            
+            <br>
+            <img src="../img/forumanon.png" class="projectImg">
             <h5>A forum for sharing ideas anonymously</h5>
-            <div id="projectButtons">
                 <!-- <a href="#" type="button" class="btn btn-secondary" id="projectButton">Not Deployed</a> -->
                 <a href="https://github.com/ryanhkenyon/ForumAnon" type="button" class="btn btn-secondary" id="projectButton" target="_blank">View Repository</a>
-            </div>
         </div>
 
         <!-- ABOUT -->
-      <div class="container text-center" id="aboutBox">
-        <h1 id="aboutProjectTitle">About ForumAnon</h1>
+      <div class="container text-center">
+        <div class="infoBox">
+          <h1>About ForumAnon</h1>
+        </div>
         <div class="row">
-          <div class="col" id="frontCol">
-            <div id="userDetails">
-              <h3 id="aboutText">User Details</h3>
+          <div class="col">
+            <div class="infoBox small">
+              <h3>User Details</h3>
               <p>ForumAnon is a simple website for sharing thoughts and ideas. After registering, users can either create new threads or add comments to existing ones. Users are able to edit their own threads/comments after posting, but unable to edit threads/comments of others.</p>
             </div>
           </div>
-          <div class="col" id="backCol">
-            <div id="techDetails">
-              <h3 id="aboutText">Tech Details</h3>
-              <div id="icons">
+          <div class="col">
+            <div class="infoBox small">
+              <h3>Tech Details</h3>
+              <div>
                 <img src="../img/icons/HTML5.png" alt="HTML5">
                 <img src="../img/icons/CSS.png" alt="CSS">
                 <img src="../img/icons/JS.png" alt="JavaScript">
@@ -82,27 +95,19 @@
         <br/>
       </div>
       <!-- ABOUT -->
-
-      <!-- OTHER PROJECTS -->
-      <div id="projectsTitleBox">
-        <h1 id="projectsTitle">My Other Projects</h1>
-        <div id="selectProject">
-          <form>
-            <select
-            class="form-select"
-              id="selectProject"
-              onchange="location = this.value"
-            >
-              <option value="" disabled selected hidden>Select Project</option>
-              <option id="selectValetManager" value="./valetManager.html">
-                Valet Manager
-              </option>
-              <option id="selectForumAnon" value="./forumAnon.html">ForumAnon</option>
-              <option id="selectWeatherApp" value="./weatherApp.html">Weather App</option>
-            </select>
-          </form>
-        </div>
+      <!-- OTHER PROJECTS START -->
+      <h1 class="projectsTitle" id="projects">Other Projects</h1>
+      <div class="projectSelect">
+        <form>
+          <select class="form-select" onchange="location = this.value">
+            <option value="" disabled selected hidden>Select Project</option>
+            <option value="./valetManager.html">Valet Manager</option>
+            <option value="./forumAnon.html">ForumAnon</option>
+            <option value="./weatherApp.html">Weather App</option>
+          </select>
+        </form>
       </div>
+      <!--  CAROUSEL START -->
       <div
         id="carouselExampleControls"
         class="carousel slide"
@@ -111,17 +116,29 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="cards-wrapper">
-              <div id="sideCard" class="card d-none d-xxl-block">
+              <div class="card d-none d-xxl-block">
                 <div class="card-body">
-                  <br>
-                  <h5 class="card-text" id="valetManTech">-User Details-</h5>
-                  <br>
-                  <p>Valet Manager is a website built for keeping track of data on the ongoings of a valet operation. Users can save data on their valet employees and locations where they operate. After registering an account, users can either Add Location or Add Valet. Completing these forms will populate the Locations and Valets pages with the updated data.<br><br>When there is both a Location and a Valet saved, the user can assign the two to each other by clicking Details on either a Location or a Valet. Scrolling down on this page will reveal a dropdown menu populated with options. Selecting one of these will populate the area below the Details page with the relative data.</p>
+                  <br />
+                  <h5 class="card-text">-User Details-</h5>
+                  <br />
+                  <p>
+                    Valet Manager is a website built for keeping track of data
+                    on the ongoings of a valet operation. Users can save data on
+                    their valet employees and locations where they operate.
+                    After registering an account, users can either Add Location
+                    or Add Valet. Completing these forms will populate the
+                    Locations and Valets pages with the updated data.<br /><br />When
+                    there is both a Location and a Valet saved, the user can
+                    assign the two to each other by clicking Details on either a
+                    Location or a Valet. Scrolling down on this page will reveal
+                    a dropdown menu populated with options. Selecting one of
+                    these will populate the area below the Details page with the
+                    relative data.
+                  </p>
                 </div>
               </div>
               <div class="card">
                 <img
-                  id="carouselImg"
                   src="../img/valetmanagerpic.png"
                   class="card-img-top"
                   alt="..."
@@ -131,78 +148,106 @@
                   <p class="card-text">
                     A website that keeps track of your valet business
                   </p>
-                  <a href="../index/valetManager.html" class="btn btn-primary">View Project Details</a>
+                  <a href="./valetManager.html" class="btn btn-primary"
+                    >View Project Details</a
+                  >
                 </div>
               </div>
-              <div id="sideCard" class="card d-none d-md-block">
+              <div class="card d-none d-md-block">
                 <div class="card-body">
-                  <br>
-                  <h5 class="card-text" id="valetManTech">-Tech Details-</h5>
-                  <br>
+                  <br />
+                  <h5 class="card-text">-Tech Details-</h5>
+                  <br />
                   <div id="icons">
-                    <img src="../img/icons/HTML5.png" alt="HTML5">
-                    <img src="../img/icons/CSS.png" alt="CSS">
-                    <img src="../img/icons/JS.png" alt="JavaScript">
-                    <img src="../img/icons/React.png" alt="React">
-                    <img src="../img/icons/MongoDB.png" alt="MongoDB">
-                    <img src="../img/icons/NodeJS.png" alt="NodeJS">
+                    <img src="../img/icons/HTML5.png" alt="HTML5" />
+                    <img src="../img/icons/CSS.png" alt="CSS" />
+                    <img src="../img/icons/JS.png" alt="JavaScript" />
+                    <img src="../img/icons/React.png" alt="React" />
+                    <img src="../img/icons/MongoDB.png" alt="MongoDB" />
+                    <img src="../img/icons/NodeJS.png" alt="NodeJS" />
                   </div>
-                  <br>
-                  Valet Manager has login-logout functionality, complete with JWT and cookie. Registered user passwords are hashed with Bcrypt and stored on MongoDB. Express is used to route files together in the back end.
+                  <br />
+                  Valet Manager has login-logout functionality, complete with
+                  JWT and cookie. Registered user passwords are hashed with
+                  Bcrypt and stored on MongoDB. Express is used to route files
+                  together in the back end. Mongoose _id's used to associate
+                  Locations and Valets with each other. <br /><br />
+                  Valet Manager was developed by Ryan Kenyon as part of
+                  Kingsland University's Full Stack Developer program.
                 </div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="cards-wrapper">
-              <div id="sideCard" class="card d-none d-xxl-block">
+              <div class="card d-none d-xxl-block">
                 <div class="card-body">
-                  <br>
-                  <h5 class="card-text" id="valetManTech">-User Details-</h5>
-                  <br>
-                  <p>ForumAnon is a simple website for sharing thoughts and ideas. After registering, users can either create new threads or add comments to existing ones. Users are able to edit their own threads/comments after posting, but unable to edit threads/comments of others.<br><br></p>
+                  <br />
+                  <h5 class="card-text">-User Details-</h5>
+                  <br />
+                  <p>
+                    ForumAnon is a simple website for sharing thoughts and
+                    ideas. After registering, users can either create new
+                    threads or add comments to existing ones. Users are able to
+                    edit their own threads/comments after posting, but unable to
+                    edit threads/comments of others.<br /><br />
+                  </p>
                 </div>
               </div>
               <div class="card">
-                <img id="carouselImg" src="../img/forumanon.png" class="card-img-top" alt="..." />
+                <img src="../img/forumanon.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">ForumAnon</h5>
                   <p class="card-text">
                     A simple forum for hosting and sharing ideas
                   </p>
-                  <a href="../index/forumAnon.html" class="btn btn-primary">View Project Details</a>
+                  <a href="./forumAnon.html" class="btn btn-primary"
+                    >View Project Details</a
+                  >
                 </div>
               </div>
-              <div id="sideCard" class="card d-none d-md-block">
+              <div class="card d-none d-md-block">
                 <div class="card-body">
-                  <br>
-                  <h5 class="card-text" id="valetManTech">-Tech Details-</h5>
-                  <div id="icons">
-                    <img src="../img/icons/HTML5.png" alt="HTML5">
-                    <img src="../img/icons/CSS.png" alt="CSS">
-                    <img src="../img/icons/JS.png" alt="JavaScript">
-                    <img src="../img/icons/MongoDB.png" alt="MongoDB">
-                    <img src="../img/icons/NodeJS.png" alt="NodeJS">
+                  <br />
+                  <h5 class="card-text">-Tech Details-</h5>
+                  <div>
+                    <img src="../img/icons/HTML5.png" alt="HTML5" />
+                    <img src="../img/icons/CSS.png" alt="CSS" />
+                    <img src="../img/icons/JS.png" alt="JavaScript" />
+                    <img src="../img/icons/MongoDB.png" alt="MongoDB" />
+                    <img src="../img/icons/NodeJS.png" alt="NodeJS" />
                   </div>
-                  <br>
-                  <p>ForumAnon was built with a Handelbars and uses a MongoDB hosted server to host data. Other features include JWT, Bcrypt, Express, and Node.JS</p>
+                  <br />
+                  <p>
+                    ForumAnon was built with a Handelbars and uses a MongoDB
+                    hosted server to host data. Login-logout functionality with
+                    JWT and cookie. MongoDB _id associated with posts/comments
+                    to prevent unauthorized editing or deletion.<br /><br />ForumAnon
+                    was built by Ryan Kenyon and Binh Tran as part of Kingsland
+                    University's Full-Stack Developer program.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="cards-wrapper">
-              <div id="sideCard" class="card d-none d-xxl-block">
+              <div class="card d-none d-xxl-block">
                 <div class="card-body">
-                  <br>
-                  <h5 class="card-text" id="valetManTech">-User Details-</h5>
-                  <br>
-                  <p>WeatherApp is a simple website that searches for current and forecasted weather from any zip code. Data includes highs and lows, humidity, and weather messages.</p>
+                  <br />
+                  <h5 class="card-text">-User Details-</h5>
+                  <br />
+                  <p>
+                    WeatherApp is a simple website that searches for current and
+                    forecasted weather from any zip code. Data includes highs
+                    and lows, humidity, and weather messages. Forecasted weather
+                    is displayed for the next seven days below the current
+                    weather.
+                  </p>
                 </div>
               </div>
               <div class="card">
                 <img
-                id="carouselImg"
                   src="../img/weatherapp.png"
                   class="card-img-top"
                   alt="..."
@@ -212,20 +257,34 @@
                   <p class="card-text">
                     A simple app demonstrating API fetch requests.
                   </p>
-                  <a href="../index/weatherApp.html" class="btn btn-primary">View Project Details</a>
+                  <a href="./weatherApp.html" class="btn btn-primary"
+                    >View Project Details</a
+                  >
                 </div>
               </div>
               <div id="sideCard" class="card d-none d-md-block">
                 <div class="card-body">
-                  <br>
-                  <h5 class="card-text" id="valetManTech">-Tech Details-</h5>
+                  <br />
+                  <h5 class="card-text">-Tech Details-</h5>
                   <div id="icons">
-                    <img src="../img/icons/HTML5.png" alt="HTML5">
-                    <img src="../img/icons/CSS.png" alt="CSS">
-                    <img src="../img/icons/JS.png" alt="JavaScript">
+                    <img src="../img/icons/HTML5.png" alt="HTML5" />
+                    <img src="../img/icons/CSS.png" alt="CSS" />
+                    <img src="../img/icons/JS.png" alt="JavaScript" />
                   </div>
-                  <br>
-                  <p>WeatherApp is a simple HTML page demonstrating a successful fetch request to a weather website's API. After validating the zip code, the app will make a fetch request to <a href="https://openweathermap.org/" target="_blank">openweathermap.org</a> and display the returned data through DOM manipulation. <br><br> If zip code is invalid, error page will be displayed.</p>
+                  <br />
+                  <p>
+                    WeatherApp is a simple HTML page demonstrating a successful
+                    fetch request to a weather website's API. After validating
+                    the zip code, the app will make a fetch request to
+                    <a href="https://openweathermap.org/" target="_blank"
+                      >openweathermap.org</a
+                    >
+                    and display the returned data through DOM manipulation. If
+                    zip code is invalid, error page will be displayed.
+                    <br /><br />
+                    WeatherApp was developed by Ryan Kenyon and Binh Tran as
+                    part of Kingsland University's Full Stack Developer program.
+                  </p>
                 </div>
               </div>
             </div>
@@ -251,115 +310,94 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <!-- END OTHER PROJECTS -->
-    </div>
+      <!-- CAROUSEL END -->
 
-      <!-- CONTACT PAGE -->
-    <div class="container-fluid" id="contactPage">
-        <h1>Contact me!</h1>
-        <div class="container-sm" id="contactForm">
-          <form>
-            <label>Name</label><br />
-            <input id="nameInput" required />
-            <br />
-            <label>Email</label><br />
-            <input id="emailInput" required />
-            <br />
-            <label>Message</label><br />
-            <textarea id="messageInput" required></textarea>
-            <br />
-            <br />
-            <input type="submit" />
-          </form>
-        </div>
-        <br />
-      </div>
-      <!-- END CONTACT PAGE -->
-  
-      <!-- footer -->
-      <div class="container-fluid" id="footer">
-        <footer class="bg-dark text-center text-white">
-          <!-- Grid container -->
-          <div class="container p-4">
-            <!-- Section: Social media -->
-            <section class="mb-4">
-              <!-- Facebook -->
-              <a
-                class="btn btn-outline-light btn-floating m-1"
-                href="https://www.facebook.com/ryanhunterkenyon"
-                role="button"
-                target="_blank"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-  
-              <!-- Twitter -->
-              <a
-                class="btn btn-outline-light btn-floating m-1"
-                href="https://twitter.com/arkaythegod"
-                role="button"
-                target="_blank"
-                ><i class="fab fa-twitter"></i
-              ></a>
-  
-              <!-- Linkedin -->
-              <a
-                class="btn btn-outline-light btn-floating m-1"
-                href="https://www.linkedin.com/in/ryanhkenyon/"
-                role="button"
-                target="_blank"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-  
-              <!-- Github -->
-              <a
-                class="btn btn-outline-light btn-floating m-1"
-                href="https://github.com/ryanhkenyon"
-                role="button"
-                target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-            </section>
-            <!-- Section: Social media -->
-  
-            <!-- Section: Text -->
-            <section class="mb-4">
-              <p>
-                This portfolio website was designed by Ryan Kenyon and built using
-                Bootstrap 5.<br />
-                Image by
-                <a href="https://www.freepik.com/author/starline"> starline</a>
-                on
-                <a
-                  href="https://www.freepik.com/free-vector/low-poly-white-background-design_17564691.htm#query=grey%20background&position=17&from_view=keyword"
-                >
-                  Freepik</a
-                >
-              </p>
-            </section>
-            <!-- Section: Text -->
-          </div>
-          <!-- Grid container -->
-        </footer>
-      </div>
-      <!-- footer -->
-  
-      <!-- BOOTSTRAP -->
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"
-      ></script>
-      <!-- BOOTSTRAP -->
-  
-      <!-- FONTAWESOME ICONS -->
-      <script
-        src="https://kit.fontawesome.com/09f472029f.js"
-        crossorigin="anonymous"
-      ></script>
-      <!-- FONTAWESOME ICONS -->
-
+      <!-- OTHER PROJECTS END -->
       
-      <!-- project page -->
-    
+    </div>
+    <!-- PROJECT END -->
+
+    <!-- CONTACT START -->
+    <div class="container-fluid contact" id="contact">
+      <h1>Contact me!</h1>
+      <div class="container-sm contact" id="contactForm">
+        <form>
+          <label>Name</label><br />
+          <input required />
+          <br />
+          <label>Email</label><br />
+          <input required />
+          <br />
+          <label>Message</label><br />
+          <textarea required></textarea>
+          <br />
+          <br />
+          <input type="submit" />
+        </form>
+      </div>
+      <br />
+    </div>
+    <!-- CONTACT END -->
+
+    <!-- FOOTER START -->
+    <div class="container-fluid footer">
+      <footer>
+        <div class="container p-4">
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://www.facebook.com/ryanhunterkenyon"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+
+            <!-- Twitter -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://twitter.com/arkaythegod"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+
+            <!-- Linkedin -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://www.linkedin.com/in/ryanhkenyon/"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+
+            <!-- Github -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://github.com/ryanhkenyon"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+
+          <section class="mb-4">
+            <p>
+              This portfolio website was designed by Ryan Kenyon and built using
+              Bootstrap 5.<br />
+              Image by
+              <a href="https://www.freepik.com/author/starline"> starline</a>
+              on
+              <a
+                href="https://www.freepik.com/free-vector/low-poly-white-background-design_17564691.htm#query=grey%20background&position=17&from_view=keyword"
+              >
+                Freepik</a
+              >
+            </p>
+          </section>
+        </div>
+      </footer>
+    </div>
+    <!-- FOOTER END -->
 </body>
 </html>
