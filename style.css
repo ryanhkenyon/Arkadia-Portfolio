@@ -89,7 +89,7 @@
 
 .landName > a > button {
   min-width: 10px;
-  margin-top: 20px;
+  margin: 20px 10px 0px 10px;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.6);
   color: var(--second-color);
