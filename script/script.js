@@ -1,10 +1,20 @@
+document.getElementById('open').addEventListener('click',openNav);
 
-// NAVBAR BUTTON----------------
-const navHome = document.getElementById('navHome');
+document.getElementById('close').addEventListener('click',closeNav);
 
+function openNav() {
+    if (document.getElementById('sideNav').style.width == '0px') {
+        document.getElementById('sideNav').style.width = '100%';
+    } else {
+        document.getElementById('sideNav').style.width = '0px';
+    }
+    document.getElementById('closeMenu').style.display = '';
+}
 
-navHome.addEventListener('click',()=>{
-    document.getElementById('navHome').style.color = 'red';
-    // TODO: get it to change back to black
-});
-// NAVBAR BUTTON---------------
+function closeNav() {
+    if (document.getElementById('sideNav').style.width == '0px') {
+        document.getElementById('sideNav').style.width = '100%';
+    } else {
+        document.getElementById('sideNav').style.width = '0px';
+    }
+}

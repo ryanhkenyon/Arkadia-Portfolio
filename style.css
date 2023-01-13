@@ -16,6 +16,16 @@
   background-color: var(--main-color);
 }
 
+.menu {
+  width: 35px;
+  height: 35px;
+  background-color: #212529;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
 .navBox {
   margin: auto;
 }
@@ -43,6 +53,29 @@
 }
 
 /* NAVBAR END */
+
+/* SIDENAV START */
+
+#sideNav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--main-color);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+#close {
+  position: absolute;
+  top: 0;
+  margin: 8.5px 0 0 12px;
+}
+
+/* SIDENAV END */
 
 /* LANDING START */
 
